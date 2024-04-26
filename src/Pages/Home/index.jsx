@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CardLocaisExercicios from "../../Components/CardLocaisExercicios"
 
 
 function App() {
