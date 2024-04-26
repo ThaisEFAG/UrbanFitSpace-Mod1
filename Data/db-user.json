@@ -1,6 +1,5 @@
 { "listUsuarios": [
     {
-        "id":"1",
         "nome":"Thaís Gonçalves",
         "sexo":"F",
         "CPF":"395.945.953-83",
