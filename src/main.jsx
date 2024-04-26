@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from "../src/Pages/Home"
 import Login from "../src/Pages/Login"
-import Cadastro from "../src/Pages/Cadastro"
+import CadastroUsuarios from "../src/Pages/CadastroUsuarios"
+import CadastroExercicios from './Pages/CadastroExercicios';
 
 
 const routers = createBrowserRouter([
@@ -16,8 +17,12 @@ const routers = createBrowserRouter([
       element: <Login/>
     },
     {
-      path: "/cadastro",
-      element: <Cadastro/>
+      path: "/cadastroUsuarios",
+      element: <CadastroUsuarios/>
+    },
+    {
+      path: "/cadastroExercicios",
+      element: <CadastroExercicios/>
     }
 ])
 

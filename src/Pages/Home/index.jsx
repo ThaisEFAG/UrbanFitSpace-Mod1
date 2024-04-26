@@ -1,13 +1,23 @@
 import { useState } from 'react'
 import CardLocaisExercicios from "../../Components/CardLocaisExercicios"
+import listUsuarios from "../../../Data/db-user.json"
 
 
-function App() {
-  const [count, setCount] = useState(0)
+
+function home() {
+
+    const stringUser = JSON.stringify(listUsuarios);
+    console.log(stringUser)
+
+    const listUser = stringUser.map((itemAtual) => {
+
+    })
 
   return (
     <>
-     
+    {listUsuarios.map((itemAtual) => {
+
+    })}
     </>
   )
 }

@@ -1,0 +1,13 @@
+{ "listUsuarios": [
+    {
+        "id":"1",
+        "nome":"Thaís Gonçalves",
+        "sexo":"F",
+        "CPF":"395.945.953-83",
+        "data de nascimento":"18/08/1998",
+        "e-mail":"thaishelena@gmail.com",
+        "senha":"123456",
+        "endereço":""
+    }
+]
+}

@@ -1,7 +1,8 @@
 import "./style.css"
 import PropTypes from 'prop-types'
 
-    function cadastro(){
+    function cadastroUsuarios(){
+
 
     // useEffect(() => {
     //     fetch("http://http://localhost:5174/usurios")
@@ -56,7 +57,7 @@ import PropTypes from 'prop-types'
                     <input type="password" placeholder="Digite sua senha" />
                 </div>
                 <div className="save">
-                    {/* <button className="save-click" onClick={() => ()}>Salvar</button> */}
+                    {/* <button className="save-click" onClick={cadastroUsuarios}>Salvar</button> */}
                 </div>
             </form>
         </div>
@@ -65,11 +66,11 @@ import PropTypes from 'prop-types'
     )
 }
 
-    Round.PropTypes = {
-        nome:PropTypes.string.isRequired
+    // Round.PropTypes = {
+    //     nome:PropTypes.string.isRequired
         
 
-    }
+    // }
 
-export default cadastro;
+export default cadastroUsuarios;
 

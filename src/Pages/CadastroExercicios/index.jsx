@@ -1,6 +1,6 @@
 import "./style.css"
 
-function cadastroUsuario() {
+function cadastroExercicios() {
 
     return(
         <>
@@ -9,4 +9,4 @@ function cadastroUsuario() {
     )
 }
 
-export default cadastroUsuario
+export default cadastroExercicios
