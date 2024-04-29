@@ -6,8 +6,8 @@
 
 // aqui vamos guardar os locais em estado começando setandmo o estado inicial e fazer uma função para add os locais em uma lista
 
-import { createContext, useState } from "react";
-import db from "../../data/db.json"
+import { createContext, useState, useEffect } from "react";
+
 
 
 export const UsuariosContext = createContext()
@@ -15,25 +15,22 @@ export const UsuariosContext = createContext()
 //estado do form cadastro
 
 export const UsuariosContextProvider = ({children}) => {
-    const [usuarios, setUsuarios] = useState([db
-        // {
-        //     nome: "Thais",
-        //     email: "thais@email.com"
-        // },
-        // {
-        //     nome: "Mario",
-        //     email: "thais@email.com"
-        // },
-        // {
-        //     nome: "Valdenie",
-        //     email: "thais@email.com"
-        // }
-    ]);
 
+    const [listUsuarios, setListUsuarios] = useState([])
+
+// useEffect(() => {
+//     fetch("http://localhost:3000/listUsuarios")
+//     .then(response => response.json())
+//     .then(dados => setListUsuarios(dados))
+//     .catch(erro => console.log(erro))
+// }, [])
+  
+
+  
     
 
     return(
-        <UsuariosContext.Provider value={{usuarios, setUsuarios}}>
+        <UsuariosContext.Provider value={{listUsuarios, setListUsuarios}}>
         {children}
         </UsuariosContext.Provider>
     )

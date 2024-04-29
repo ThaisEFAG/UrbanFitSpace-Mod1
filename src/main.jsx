@@ -8,6 +8,7 @@ import CadastroExercicios from './Pages/CadastroExercicios/index.jsx';
 import EditExercicios from "./Pages/EditExercicios/index.jsx";
 import Outlet from "./Outlet/Outlet.jsx";
 import PageErro from "./Pages/PageErro.jsx"
+import CardLocaisExercicios from './Components/CardLocaisExercicios/index.jsx';
 
 
 
@@ -44,7 +45,11 @@ const routers = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-        <RouterProvider router = {routers}>
+          <CardLocaisExercicios>
+          <RouterProvider router = {routers}>
 
-        </RouterProvider> 
+          </RouterProvider> 
+          </CardLocaisExercicios>
+
+        
 )

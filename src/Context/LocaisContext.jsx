@@ -1,28 +1,30 @@
-import { useState, createContext } from 'react';
-import listLocais from "../../data/db-locais.json";
+import { createContext, useEffect, useState } from 'react';
 
-export const contextLocais = createContext(listLocais);
 
-function locaisContext({children}) {
 
-    const [ locais, setListLocais] = useState([]);
+export const ContextLocais = createContext();
 
-  useEffect(() => {
-      fetch("http://localhost:3000/listLocais")
-      .then(response => response.json())
-      .then(dados => setListLocais(dados))
-      .catch(erro => console.log(erro))
-  }, [])
+
+function CardLocaisExercicios({children}) {
+
+        const [ locais, setLocais ] = useState([]);
+    
+    //   useEffect(() => {
+    //       fetch("http://localhost:3000/listLocais")
+    //       .then(response => response.json())
+    //       .then(dados => setLocais(dados), console.log(dados))
+    //       .catch(erro => console.log(erro))
+    //   }, [])
+
     
 
     return(
-        {!!locais && listUsuarios.map(usuario => (
-            <h3 key={usuario.id}>{usuario.nome}</h3>
-           ))}
-    <contextLocais.Provider value={{locais, setLocis}}>
+     
+
+<LocaisContext.Provider value={{locais, setLocais}}>
         {children}
-    </contextLocais.Provider>
+    </LocaisContext.Provider>
     )
 }
 
-export default locaisContext;
+export default CardLocaisExercicios;

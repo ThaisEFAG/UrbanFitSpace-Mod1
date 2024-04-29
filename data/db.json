@@ -16,6 +16,7 @@
 ],
 "listLocais": [
     {
+        "id": 1,
         "nome_local": "teste1",
         "identificador_usuario": "teste2",
         "descricao_local": "teste3",
