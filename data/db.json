@@ -1,0 +1,30 @@
+{ "listUsuarios": [
+    {
+        "id": 1,
+        "nome":"Thaís Gonçalves",
+        "sexo":"F",
+        "CPF":"395.945.953-83",
+        "data de nascimento":"18/08/1998",
+        "e-mail":"thaishelena@gmail.com",
+        "senha":"123456",
+        "cep": "",
+        "endereço":"",
+        "cidade":"",
+        "estado":"",
+        "isLogado": false
+    }
+],
+"listLocais": [
+    {
+        "nome_local": "teste1",
+        "identificador_usuario": "teste2",
+        "descricao_local": "teste3",
+        "localizacao_cep": "teste4",
+        "localizacao_endereco":"teste5",
+        "localizacao_cidade":"teste6",
+        "localizacao_estado":"teste7",
+        "localizacao_coordenadas": "teste8",
+        "tipos_esportes": "teste9"
+    }
+]
+}
