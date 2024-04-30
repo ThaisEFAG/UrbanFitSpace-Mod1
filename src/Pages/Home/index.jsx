@@ -1,25 +1,35 @@
-import { useState } from 'react'
-import CardLocaisExercicios from "../../Components/CardLocaisExercicios"
-import listUsuarios from "../../../Data/db-user.json"
+import { useContext } from "react";
+import CardLocaisExercicios, { ContextLocais } from "../../Context/LocaisContext";
+import "./style.css";
 
 
 
 function home() {
 
-    const stringUser = JSON.stringify(listUsuarios);
-    console.log(stringUser)
+    const {locais, setLocais} = useContext(ContextLocais)
 
-    const listUser = stringUser.map((itemAtual) => {
+    // const { usuarios, setUsuarios} = useContext(UsuariosContext)
 
-    })
+  
 
-  return (
-    <>
-    {listUsuarios.map((itemAtual) => {
+    // const stringLocais = dbLocais.listLocais;
+    // console.log(stringLocais)
 
-    })}
-    </>
+    function getLista() {
+
+      //LISTAR LOCAIS PARA
+
+          // const listLocaisDt = stringLocais.map((itemAtual) => {
+    }
+    return(
+      <>
+   {!!locais && locais.map((local) => ( 
+    <h3 key={local.id}>{local.nome_local}</h3>
+   ))}
+
+     
+  </>
   )
 }
 
-export default App
+export default home;
