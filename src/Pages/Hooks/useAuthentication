@@ -1,0 +1,15 @@
+// functionuseAtuthentication() {
+//     const [user, setUser] = useState(null);
+
+//     function login(username) {
+//         //logica de autenticação
+//         setUser(username);
+//     }
+
+//     function logout() {
+//         //logica de logout
+//         setUser(null)
+//     }
+
+//     return { user, login, logout };
+// }

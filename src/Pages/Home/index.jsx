@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import CardLocaisExercicios from "../../Components/CardLocaisExercicios"
-import listUsuarios from "../../../Data/db-user.json"
-import listLocais from "../../../Data/db-locais.json"
+import { useContext } from "react";
+import { ContextLocais } from "../../Context/LocaisContext";
+import "./style.css";
 
 
 
 function home() {
 
-    const stringLocais = listLocais;
-    console.log(stringLocais)
+    const {locais, setLocais} = useContext(ContextLocais)
 
-    
+    // const { usuarios, setUsuarios} = useContext(UsuariosContext)
 
-    // const listLocaisDt = stringLocais.map((itemAtual) => {
+  
 
-    // })
+    // const stringLocais = dbLocais.listLocais;
+    // console.log(stringLocais)
 
-  return (
-    <>
-    {stringLocais.map((itemAtual, index) => (
-      <div key={index}>
-        <CardLocaisExercicios nomeLocal={itemAtual.nome_local}
-                              idUsuario={itemAtual.identificador_usuario}
-                              descricaoLocal={itemAtual.descricao_local}
-                              localEnder={itemAtual.loalizacao_endereco}
-                              localCoorden={itemAtual.localizacao_coordenadas}
-                              atividadesExport={itemAtual.tipos_esportes}/>
-      </div>                         
-    ))}
-   
+    function getLista() {
+
+      //LISTAR LOCAIS PARA
+
+          // const listLocaisDt = stringLocais.map((itemAtual) => {
+    }
+    return(
+      <>
+   {!!locais && locais.map((local) => ( 
+    <h3 key={local.id}>{local.nome_local}</h3>
+   ))}
+
+     
   </>
   )
 }
