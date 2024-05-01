@@ -1,13 +1,14 @@
-import { createContext, useEffect, useState } from 'react';
+// import { createContext, useEffect, useState } from 'react';
 
 
 
-export const ContextLocais = createContext();
+// export const ContextLocais = createContext();
 
 
-function CardLocaisExercicios({children}) {
+function CardLocaisExercicios() {
+// function CardLocaisExercicios({children}) {
 
-        const [ locais, setLocais ] = useState([]);
+        // const [ locais, setLocais ] = useState([]);
     
     //   useEffect(() => {
     //       fetch("http://localhost:3000/listLocais")
@@ -19,11 +20,11 @@ function CardLocaisExercicios({children}) {
     
 
     return(
-     
+     <></>
 
-<LocaisContext.Provider value={{locais, setLocais}}>
-        {children}
-    </LocaisContext.Provider>
+//  <ContextLocais.Provider value={{}}>
+//      {children}
+//    </ContextLocais.Provider>
     )
 }
 

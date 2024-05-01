@@ -8,7 +8,7 @@ import CadastroExercicios from './Pages/CadastroExercicios/index.jsx';
 import EditExercicios from "./Pages/EditExercicios/index.jsx";
 import Outlet from "./Outlet/Outlet.jsx";
 import PageErro from "./Pages/PageErro.jsx"
-import CardLocaisExercicios from './Components/CardLocaisExercicios/index.jsx';
+import CardLocaisExercicios from './Context/LocaisContext.jsx';
 
 
 
@@ -33,7 +33,7 @@ const routers = createBrowserRouter([
       element: <Home/>
     },
     {
-      path: "/cadastroExercicios",
+      path: "/CadastroExercicios",
       element: <CadastroExercicios/>
     },
     {

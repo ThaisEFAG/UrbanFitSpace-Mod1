@@ -1,13 +1,51 @@
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import "./style.css"
 // import PropTypes from 'prop-types'
 
+//mapa by coordenadas pra react
+//cadastro no google console
+
     function cadastroUsuarios(){
-            const {register, handleSubmit, formstate: {errors} } = useForm( );
+
+
+            const {register, handleSubmit} = useForm( );
+            // const {register, handleSubmit, formstate: {errors} } = useForm( );
 
             function onSubmit(formValue) {
                 console.log("\nValores form cad user: \n", formValue);
             }
+
+            const dataInit = {
+                cep: "",
+                logradouro: "",
+                complemento: "", 
+                bairro: "",
+                localidade: "",
+                uf: ""
+              }
+           
+           function buscarCep() {
+                    if(cep < 8) {
+                        return;
+                    } else {
+                        const url = `http://viacep.com.br/ws/${cep}/json/`;
+                         fetch(url, {mode: 'cors'})
+                          .then((response) => response.json())
+                          .then((data) => {
+                            console.log(data)
+                              if (data.erro == true) {
+                                  alert('Digite um CEP válido');
+                              } else {
+                                  console.log(data.logradouro)
+                                  localizacao_endereco: data.logradouro
+                              }
+                          })
+                          .catch(err => console.log(err));
+                    }
+                }
+                  
+              
 
     // useEffect(() => {
     //     fetch("http://http://localhost:5174/usurios")
@@ -17,8 +55,29 @@ import "./style.css"
     // }, [])
 
     // function cadastrarUsuario() {
+        // const completaCep = event => {
+        //     event.target.value = 11;
+        //     setValue(event.target.value);
+        //     console.log('blur')
+        //   };
+
+        var cep
+        var endereco
+
+          function setCEP(value){
+            cep = value
+           
+          }
+          function CEPIsValid(){
+            console.log(cep)
+            if(cep.length != 8){
+                alert('Digite 8 números')
+                return
+            }
+                console.log('Tamanho valido')
+                buscarCep()
+          }
         
-    // }
 
     return(
         
@@ -49,9 +108,13 @@ import "./style.css"
                     <label htmlFor="email">E-mail:</label>
                     <input type="email" {...register("email", {required: true, maxLength: 50})} placeholder="Digite seu e-mail" />
                 </div>
+                <div className="form-cep">
+                    <label htmlFor="cep">CEP:</label>
+                    <input type="text" onChange={e => setCEP(e.target.value)} onBlur={CEPIsValid} value={cep} placeholder="Digite seu CEP" />
+                </div>
                 <div className="form-endereco">
                     <label htmlFor="endereco">Endereço:</label>
-                    <input type="text" {...register("endereco", {required:true})} placeholder="Digite seu endereço" />
+                    <input type="text" value={endereco} {...register("endereco", {required:true})} placeholder="Digite seu endereço" />
                 </div>
                 <div className="form-senha">
                     <label htmlFor="senha">Crie uma senha:</label>
