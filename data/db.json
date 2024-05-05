@@ -115,6 +115,32 @@
       "password": "fg412545",
       "privacyTerms": true,
       "id": "amUTQKI"
+    },
+    {
+      "nome": "Marcela",
+      "sex": "Feminino",
+      "cpf": "56295632563",
+      "dtNasc": "2023-10-05",
+      "email": "marcelatrindade@gmail.com",
+      "endereco": "QR 429 Conjunto 7",
+      "cidade": "Brasília",
+      "estado": "DF",
+      "password": "123456545",
+      "privacyTerms": true,
+      "id": "l2LbpQM"
+    },
+    {
+      "nome": "Doralice",
+      "sex": "Feminino",
+      "cpf": "98512546232",
+      "dtNasc": "2011-03-02",
+      "email": "doraaventureira@yahoo.com",
+      "endereco": "Rua Padre José da Cunha D'Eça",
+      "cidade": "Arari",
+      "estado": "MA",
+      "password": "42125gdd",
+      "privacyTerms": true,
+      "id": "9Xrc1Qr"
     }
   ],
   "listLocais": [

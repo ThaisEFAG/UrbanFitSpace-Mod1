@@ -17,6 +17,11 @@ export const UsuariosContextProvider = ({children}) => {
 
          //useEffect chama o fatch
   useEffect(() => {
+      lerUsuarios()
+    
+  }, []);
+
+  function lerUsuarios() {
     //O fetch faz o get (uso para renderizar na home e na lista de edição)
     fetch("http://localhost:3000/listUsuarios")
     //1º then transforma de json para js
@@ -24,7 +29,7 @@ export const UsuariosContextProvider = ({children}) => {
       //2º then recebe o resultado do 1º que são os dados já transformados
       .then((data) => setListUsuarios(data))
       .catch((error) => console.error(error));
-  }, []);
+  }
 
 //function de CADASTRO DE USUARIO
   function onSubmitUser(cadFormUser) {
@@ -36,7 +41,10 @@ export const UsuariosContextProvider = ({children}) => {
             "Content-Type": "application/json"
         }
     })
-    .then(() => alert("Usuário cadastrado com sucesso"))
+    .then(() => {
+      alert("Usuário cadastrado com sucesso")
+      lerUsuarios()
+  })
     .catch(() => alert("Erro cadastro"))
   }
 

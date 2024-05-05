@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { UsuariosContext } from "../../Context/UsuariosContext";
 import "./style.css";
 
-// import PropTypes from 'prop-types'
 
 //mapa by coordenadas pra react
 //cadastro no google console
@@ -19,7 +18,7 @@ function cadastroUsuarios() {
   };
 
   function buscarCep() {
-    // const cep = getValues ('cep')
+
     if (cep < 8) {
       return;
     } else {
@@ -45,20 +44,6 @@ function cadastroUsuarios() {
     setValue("estado", data.uf);
   }
 
-  // useEffect(() => {
-  //     fetch("http://http://localhost:5174/usurios")
-  //     .then(response => response.json())
-  //     .then(dados => setUsuarios(dados))
-  //     .catch(erro => console.log(erro))
-  // }, [])
-
-  // function cadastrarUsuario() {
-  // const completaCep = event => {
-  //     event.target.value = 11;
-  //     setValue(event.target.value);
-  //     console.log('blur')
-  //   };
-
   var cep;
   var endereco;
 
@@ -82,20 +67,10 @@ function cadastroUsuarios() {
     getValues,
     setValue,
   } = useForm();
-  // const {register, handleSubmit, formstate: {errors} } = useForm( );
+  
 
   const { onSubmitUser } = useContext(UsuariosContext);
 
-  //   const onSubmitForm = (cadUser) => {
-  //     onSubmitUser(cadUser)
-  //     console.log()
-  //   }
-
-  // function testeconsole() {
-  //     teste()
-  // }
-
-  // testeconsole()
 
   return (
     <div className="container-cadasto">
@@ -262,9 +237,7 @@ function cadastroUsuarios() {
             )}
           </div>
           <div className="button">
-            <button className="save-click" type="submit">
-              Criar conta
-            </button>
+            <button className="save-click" type="submit">Criar conta</button>
           </div>
         </form>
       </div>

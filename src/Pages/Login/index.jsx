@@ -1,4 +1,5 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function login() {
 
@@ -15,13 +16,13 @@ function login() {
                     </div>
                     <div className="senha-div">
                         <label htmlFor="">Senha:</label>
-                        <input type="text" placeholder="Digite sua senha" />
+                        <input type="password" placeholder="Digite sua senha" />
                     </div>
                     <div className="enterLogin">
                         <button className="login-enter" onClick={() => addUserLogin()}>Entrar</button>
                     </div>
                     <div className="cadastro-go">
-                        <button>Cadastre-se</button>
+                        <button> <Link to="/cadastroUsuarios">Cadastre-se</Link></button>
                     </div>
                 </div>
             
