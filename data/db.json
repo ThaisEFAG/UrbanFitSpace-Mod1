@@ -102,6 +102,19 @@
       "endereco": "QR 429 Conjunto 5",
       "password": "465465496",
       "privacyTerms": true
+    },
+    {
+      "nome": "Virginia",
+      "sex": "Feminino",
+      "cpf": "84532569822",
+      "dtNasc": "2024-02-07",
+      "email": "virginiasantos@gmail.com",
+      "endereco": "QR 429 Conjunto 4",
+      "cidade": "Brasília",
+      "estado": "DF",
+      "password": "fg412545",
+      "privacyTerms": true,
+      "id": "amUTQKI"
     }
   ],
   "listLocais": [
@@ -118,96 +131,25 @@
       "tipos_esportes": "teste9"
     },
     {
-      "id": "2",
-      "nome_local": "teste2",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
+      "descricao_local": "Centro esportivo Lagoa",
+      "localizacao_cep": "88420000",
+      "localizacao_endereco": "Casa da Mãe Joana",
+      "localizacao_cidade": "Agrolândia",
+      "localizacao_estado": "SC",
+      "localizacao_coordenadas": "",
+      "tipos_esportes": "natação, caminhada, musculação",
+      "id": "HhLsTut"
     },
     {
-      "id": "3",
-      "nome_local": "teste3",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
-    },
-    {
-      "id": "4",
-      "nome_local": "teste4",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
-    },
-    {
-      "id": "5",
-      "nome_local": "teste5",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
-    },
-    {
-      "id": "6",
-      "nome_local": "teste6",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
-    },
-    {
-      "id": "7",
-      "nome_local": "teste7",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
-    },
-    {
-      "descricao_local": "trilha",
-      "localizacao_cep": "72329005",
-      "localizacao_endereco": "sadfasfa",
-      "localizacao_cidade": "asdfasd",
-      "localizacao_estado": "asdfasdf",
-      "localizacao_coordenadas": "asdfasdfa",
-      "tipos_esportes": "afasd adsfasdfa asdfasd",
-      "id": "YYaA83w"
-    },
-    {
-      "descricao_local": "da mata",
+      "nome_local": "Exercite",
+      "descricao_local": "Ao ar livre com algumas coberturas",
       "localizacao_cep": "72329009",
-      "localizacao_endereco": "sadfasfass sdgsdfg",
-      "localizacao_cidade": "asdfasd  dsfgsdf",
-      "localizacao_estado": "asdfasdf sdgdsfg",
-      "localizacao_coordenadas": "asdfasdfa sdfgs",
-      "tipos_esportes": "afasd adsfasdfa asdfasd",
-      "id": "CCgiscA"
+      "localizacao_endereco": "QR 429 Conjunto 9",
+      "localizacao_cidade": "Brasília",
+      "localizacao_estado": "DF",
+      "localizacao_coordenadas": "asdfasdfa",
+      "tipos_esportes": "Ping Pong, futebol, basquete, vôlei",
+      "id": "vhzICwp"
     }
   ]
 }

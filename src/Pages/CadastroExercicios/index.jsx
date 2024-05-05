@@ -44,6 +44,18 @@ function cadastroExercicios() {
       <div className="content-cadastro">
         <form onSubmit={handleSubmit((outracoisa) => onSubmitLoc(outracoisa))}>
           <div className="form-group">
+            <label htmlFor="nome_local">Nome do local</label>
+            <input
+              type="text"
+              {...register("nome_local", {
+                required: {
+                  message: "Campo Nome do local obrigatório",
+                  value: true,
+                },
+                maxLength: { message: "Máximo de 20 caracteres", value: 20 },
+              })}
+              className={errors?.nome_local && "input-error"}
+            />
             <label htmlFor="descricao_local">Descreva o local:</label>
             <input
               type="text"

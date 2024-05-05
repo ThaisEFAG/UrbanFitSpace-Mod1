@@ -7,7 +7,7 @@ const Cardcomponents = (props) => {
                 <div>
                     <h1>{local.nome_local}</h1>
                     <span>{local.identificador_usuario}</span>
-                    <span>{local.descrição_local}</span>
+                    <span>{local.descricao_local}</span>
                     <span>{local.localizacao_cep}</span>
                     <span>{local.localizacao_endereco}</span>
                     <span>{local.localizacao_cidade}</span>

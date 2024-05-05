@@ -104,17 +104,17 @@ function cadastroUsuarios() {
           <div className="form-group">
             <label htmlFor="name">Nome:</label>
             <input
-              className={errors?.name && "input-error"}
+              className={errors?.nome && "input-error"}
               type="text"
-              {...register("name", { required: true, maxLength: 50 })}
+              {...register("nome", { required: true, maxLength: 50 })}
               placeholder="Digite seu nome"
             />
-            {errors?.name?.type === "maxLength" && (
+            {errors?.nome?.type === "maxLength" && (
               <p className="error-message">
                 Nome deve conter no máximo 50 caracteres
               </p>
             )}
-            {errors?.name?.type === "required" && (
+            {errors?.nome?.type === "required" && (
               <p className="message-error">O campo nome é obrigatório</p>
             )}
           </div>
@@ -204,7 +204,7 @@ function cadastroUsuarios() {
             )}
           </div>
           <div className="form-group">
-            <label htmlFor="localizacao_cidade">Cidade:</label>
+            <label htmlFor="cidade">Cidade:</label>
             <input
               type="text"
               {...register("cidade", { required: true })}
@@ -215,7 +215,7 @@ function cadastroUsuarios() {
             )}
           </div>
           <div className="form-group">
-            <label htmlFor="localizacao_estado">Estado:</label>
+            <label htmlFor="estado">Estado:</label>
             <input
               type="text"
               {...register("estado", { required: true })}
