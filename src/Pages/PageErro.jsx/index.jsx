@@ -1,6 +1,6 @@
 function pageErro() {
     return(
-        <h1>Página não encontrada</h1>
+        <h1>Página não encontrada (erro de context)</h1>
     )
 }
 
