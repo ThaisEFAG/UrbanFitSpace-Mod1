@@ -12,10 +12,10 @@ export const LocaisContextProvider = ({ children }) => {
 
   //  useEffect chama o fatch
   useEffect(() => {
-   readUser()
+   ReadUser()
   }, []);
 
-  function readUser() {
+  function ReadUser() {
      //O fetch faz o get
      fetch("http://localhost:3000/listLocais")
      //1º then transforma de json para js
@@ -33,7 +33,10 @@ export const LocaisContextProvider = ({ children }) => {
         "Content-Type": "application/json",
       },
     })
-      .then(() => alert("Usuário cadastrado com sucesso"))
+      .then(() => {
+        alert("Usuário cadastrado com sucesso")
+        ReadUser()
+      })
       .catch(() => alert("Erro cadastro"));
   }
 

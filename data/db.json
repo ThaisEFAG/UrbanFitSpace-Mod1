@@ -189,6 +189,17 @@
       "localizacao_coordenadas": "asdfasdfa",
       "tipos_esportes": "Ping Pong, futebol, basquete, vôlei",
       "id": "vhzICwp"
+    },
+    {
+      "nome_local": "Fit person",
+      "descricao_local": "Local calmo e familiar para caminhadas de passeios e atividades ao ar livre",
+      "localizacao_cep": "78070068",
+      "localizacao_endereco": "Rua Seis",
+      "localizacao_cidade": "Cuiabá",
+      "localizacao_estado": "MT",
+      "localizacao_coordenadas": "sdfasdf",
+      "tipos_esportes": "caminhada, dança, alongamentos",
+      "id": "RWEighv"
     }
   ]
 }
