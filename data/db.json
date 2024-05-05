@@ -141,6 +141,19 @@
       "password": "42125gdd",
       "privacyTerms": true,
       "id": "9Xrc1Qr"
+    },
+    {
+      "nome": "Geraldina Davinci",
+      "sex": "Feminino",
+      "cpf": "02356454833",
+      "dtNasc": "2024-01-26",
+      "email": "geraldina@hotmail.com",
+      "endereco": "Rua Aluísio Viana",
+      "cidade": "Fortaleza",
+      "estado": "CE",
+      "password": "65465s1dfsfsd",
+      "privacyTerms": true,
+      "id": "4vEVqY9"
     }
   ],
   "listLocais": [
