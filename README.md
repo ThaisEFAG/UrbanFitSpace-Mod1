@@ -5,12 +5,13 @@ Bem-vindo(a) ao meu projeto! :smiling_face_with_three_hearts:"
 
 _______________________________________________________________________________________________________________________________________
 
-Você já imaginou como seria extraordinário existir a possibilidade de interar as pessoas sobre locais onde elas possam se exercitar ao ar livre ou não e próximo de onde elas estão localizadas? 
+UrbanFitSpace: Descubra Locais para Praticar Atividades Físicas ao seu Redor!
+Você já pensou como seria incrível ter acesso a informações sobre locais onde você pode se exercitar ao ar livre ou em ambientes fechados, próximos à sua localização?
 
-### Pare de imaginar, pois essa possibilidade existe!!
+## Basta parar de imaginar, porque essa possibilidade agora existe!
+O UrbanFitSpace foi criado para pessoas que conhecem locais públicos ou com baixo custo para a prática de atividades físicas, permitindo que eles cadastrem esses locais de forma interativa. E o melhor de tudo é que esses registros podem ser visualizados por qualquer pessoa que queira encontrar os melhores lugares e suas localizações exatas.
 
-O UrbanFitSpace nasceu para que pessoas com conhecimentos de locais públicos ou com baixo custo para prática de atividades físicas possam cadastrar esses locais de forma interativa e melhor ainda, que esses registros de locais possam ser visualizados por pessoas que desejam saber quais os melhores lugares e suas localidades exatas. 
-É possível ainda cadastrar e visualizar quais tipos de exercícios ou atividades físicas são possíveis de serem praticados nos locais.
+Além disso, você pode cadastrar e visualizar quais tipos de exercícios ou atividades físicas são possíveis de serem praticados em cada local, tornando sua experiência de exercício ainda mais personalizada e eficiente.
 
 Exercite-se :brain:
             :anatomical_heart:
