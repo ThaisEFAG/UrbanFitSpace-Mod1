@@ -56,4 +56,4 @@ Melhorias podem ser implementadas no projeto futuramente. Algumas delas são...<
 - Facilitar a organização de eventos e meetups em locais cadastrados, onde os usuários podem se encontrar e praticar atividades físicas juntos.<br>
 - Estabelecer parcerias com empresas locais, como academias, estúdios de yoga e lojas de equipamentos esportivos, para oferecer descontos e promoções exclusivas aos usuários do aplicativo.<br>
 - Usar algoritmos de recomendação para sugerir locais com base nas preferências e histórico de atividades dos usuários, proporcionando uma experiência mais personalizada.<br>
-Integrar mapas interativos para ajudar os usuários a encontrar e navegar até os locais cadastrados de forma fácil e rápida, usando GPS se disponível.<br>
+- Integrar mapas interativos para ajudar os usuários a encontrar e navegar até os locais cadastrados de forma fácil e rápida, usando GPS se disponível.<br>
