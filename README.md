@@ -29,7 +29,7 @@ ________________________________________________________________________________
 
 -----------------------------                      --------------------------------                    --------------------------------
 
-:arrow_forward:  Instruções para execução do projeto;<br>
+:arrow_forward:  Instruções para execução do projeto;<br><br>
 1º Faça o download ou clone esse repositório;<br>
 2º Abra seu Terminal/Prompt e navegue até o diretório UrbanFitSpace-Mod1;<br>
 3º Execute o comando "npm install";<br>
