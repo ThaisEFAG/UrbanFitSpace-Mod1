@@ -1,44 +1,71 @@
-import { useState, useContext } from "react"
+import { useContext, useState } from "react";
+import { useForm } from "react-hook-form";
 import { LocaisContext } from "../../Context/LocaisContext";
-import { useForm } from "react-hook-form"
+
+const CardLocaisEdit = ({ local }) => {
+  const [desabilitar, setDesabilitar] = useState(true);
+
+  const { removeLoc, editLoc } = useContext(LocaisContext);
+
+  const { handleSubmit, reset, register } = useForm();
+
+  const toggleDisable = () => {
+    setDesabilitar(!desabilitar);
+    reset(local);
+  };
 
 
+  const handleEdit = (data) => {
+    editLoc(data);
+    setDesabilitar(true);
+  };
 
-const CardLocaisEdit = ({local, onSubmit}) => {
+  return (
+    <form onSubmit={handleSubmit(handleEdit)}>
+      <input
+        {...register("nome_local", { required: true })}
+        defaultValue={local.nome_local}
+      />
+      <input
+        {...register("descricao_local", { required: true })}
+        defaultValue={local.descricao_local}
+      />
+      <input
+        {...register("localizacao_cep", { required: true })}
+        defaultValue={local.localizacao_cep}
+      />
+      <input
+        {...register("localizacao_endereco", { required: true })}
+        defaultValue={local.localizacao_endereco}
+      />
+      <input
+        {...register("localizacao_cidade", { required: true })}
+        defaultValue={local.localizacao_cidade}
+      />
+      <input
+        {...register("localizacao_estado", { required: true })}
+        defaultValue={local.localizacao_estado}
+      />
+      <input
+        {...register("localizacao_coordenadas", { required: true })}
+        defaultValue={local.localizacao_coordenadas}
+      />
+      <input
+        {...register("tipos_esportes", { required: true })}
+        defaultValue={local.tipos_esportes}
+      />
 
-    const [desabilitar, setDesabilitar] = useState(true);
-
-    const { removeLoc, editLoc } = useContext(LocaisContext);
-
-    const { handleSubmit, register, reset } = useForm();
-
-
-            return(
-
-                <form onSubmit={handleSubmit(() => console.log("teste"))}>
-
-                    <input disabled={desabilitar} {...register('nome_local', {required: true})} defaultValue={local.nome_local}></input>
-                    <input disabled={desabilitar} {...register('id-user', {required: true})} defaultValue={local.identificador_usuario}></input>
-                    <input disabled={desabilitar} {...register('descricao_local', {required: true})} defaultValue={local.descricao_local}></input>
-                    <input disabled={desabilitar} {...register('localizacao_cep', {required: true})} defaultValue={local.localizacao_cep}></input>
-                    <input disabled={desabilitar} {...register('localizacao_endereco', {required: true})} defaultValue={local.localizacao_endereco}></input>
-                    <input disabled={desabilitar} {...register('localizacao_cidade', {required: true})} defaultValue={local.localizacao_cidade}></input>
-                    <input disabled={desabilitar} {...register('localizacao_estado', {required: true})} defaultValue={local.localizacao_estado}></input>
-                    <input disabled={desabilitar} {...register('localizacao_coordenadas', {required: true})} defaultValue={local.localizacao_coordenadas}></input>
-                    <input disabled={desabilitar} {...register('tipos_esportes', {required: true})} defaultValue={local.tipos_esportes}></input>
-                    <input disabled={desabilitar} {...register('id', {required: true})} defaultValue={local.id}></input>
-
-                    <button type="submit" onClick={desabilitar ? (e) => {
-                        e.preventDefault(); 
-                        setDesabilitar(!desabilitar);
-                        reset(local)
-                    }: setDesabilitar(!desabilitar)
-                    }>Editar</button>
-                    <button>Excluir</button>
-
-                </form>
-
-            )
-}
+      <button type="button" onClick={toggleDisable}>
+        {desabilitar ? "Editar" : "Cancelar"}
+      </button>
+      <button type="submit" disabled={desabilitar}>
+        Salvar
+      </button>
+      <button type="button" onClick={() => removeLoc(local.id)} disabled={desabilitar}>
+        Excluir
+      </button>
+    </form>
+  );
+};
 
 export default CardLocaisEdit;

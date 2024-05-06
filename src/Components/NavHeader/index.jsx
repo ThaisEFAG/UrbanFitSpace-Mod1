@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
 import useCountUsers from "../../Pages/Hooks/useCountUsers"
+import {useState, useEffect, useContext} from "react"
+import { UsuariosContext } from "../../Context/UsuariosContext";
 
 function navHeader() {
 
+    const [isLogCount, setIsLogCount] = useState(0)
+    const {logout} = useContext(UsuariosContext);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/listUsuarios?isLogado=true")
+      .then((response) => response.json())
+      .then((data) => setIsLogCount(data.length))
+      .catch((error) => console.error(error));
+  }, [])
 
     return(
         
@@ -13,8 +24,10 @@ function navHeader() {
                 <Link to="/editExercicios">Edição Locais</Link>
                 </div>
                 <div className="users-logs">
-                    Usuarios logados: {useCountUsers}
+                    Usuarios logados: {isLogCount && isLogCount}
                 </div>
+
+                <button onClick={logout}>Sair</button>
 
 
             </nav>

@@ -6,7 +6,7 @@
       "sexo": "F",
       "CPF": "395.945.953-83",
       "data de nascimento": "18/08/1998",
-      "e-mail": "thaishelena@gmail.com",
+      "email": "thaishelena@gmail.com",
       "senha": "123456",
       "cep": "",
       "endereço": "",
@@ -20,7 +20,7 @@
       "sexo": "F",
       "CPF": "356.935.045-34",
       "data de nascimento": "06/08/1991",
-      "e-mail": "marcelaF@gmail.com",
+      "email": "marcelaF@gmail.com",
       "senha": "123456",
       "cep": "",
       "endereço": "",
@@ -34,7 +34,7 @@
       "sexo": "M",
       "CPF": "234.845.193-83",
       "data de nascimento": "30/03/1985",
-      "e-mail": "DiegoD@gmail.com",
+      "email": "DiegoD@gmail.com",
       "senha": "123456",
       "cep": "",
       "endereço": "",
@@ -48,7 +48,7 @@
       "sexo": "M",
       "CPF": "936.985.933-22",
       "data de nascimento": "05/10/2001",
-      "e-mail": "leonardoD@gmail.com",
+      "email": "leonardoD@gmail.com",
       "senha": "123456",
       "cep": "",
       "endereço": "",
@@ -62,7 +62,7 @@
       "sexo": "F",
       "CPF": "037.849.920-10",
       "data de nascimento": "15/05/1968",
-      "e-mail": "viteR@gmail.com",
+      "email": "viteR@gmail.com",
       "senha": "123456",
       "cep": "",
       "endereço": "",
@@ -79,7 +79,8 @@
       "email": "thais.jcoff@gmail.com",
       "endereco": "QR 429 Conjunto 3",
       "password": "56449461645",
-      "privacyTerms": true
+      "privacyTerms": true,
+      "isLogado": false
     },
     {
       "id": "d0d9",
@@ -90,7 +91,8 @@
       "email": "thais.jcoff@gmail.com",
       "endereco": "QR 429 Conjunto 9",
       "password": "461649846516516",
-      "privacyTerms": true
+      "privacyTerms": true,
+      "isLogado": true
     },
     {
       "id": "0f5c",
@@ -101,7 +103,8 @@
       "email": "thaisefag1992@gmail.com",
       "endereco": "QR 429 Conjunto 5",
       "password": "465465496",
-      "privacyTerms": true
+      "privacyTerms": true,
+      "isLogado": true
     },
     {
       "nome": "Virginia",
@@ -114,6 +117,7 @@
       "estado": "DF",
       "password": "fg412545",
       "privacyTerms": true,
+      "isLogado": true,
       "id": "amUTQKI"
     },
     {
@@ -127,6 +131,7 @@
       "estado": "DF",
       "password": "123456545",
       "privacyTerms": true,
+      "isLogado": true,
       "id": "l2LbpQM"
     },
     {
@@ -140,7 +145,8 @@
       "estado": "MA",
       "password": "42125gdd",
       "privacyTerms": true,
-      "id": "9Xrc1Qr"
+      "id": "9Xrc1Qr",
+      "isLogado": true
     },
     {
       "nome": "Geraldina Davinci",
@@ -158,36 +164,72 @@
   ],
   "listLocais": [
     {
-      "descricao_local": "Centro esportivo Lagoa",
-      "localizacao_cep": "88420000",
-      "localizacao_endereco": "Casa da Mãe Joana",
-      "localizacao_cidade": "Agrolândia",
-      "localizacao_estado": "SC",
-      "localizacao_coordenadas": "eretewr rterte",
-      "tipos_esportes": "natação, caminhada, musculação",
-      "id": "HhLsTut"
-    },
-    {
-      "nome_local": "Exercite",
-      "descricao_local": "Ao ar livre com algumas coberturas",
-      "localizacao_cep": "72329009",
-      "localizacao_endereco": "QR 429 Conjunto 9",
-      "localizacao_cidade": "Brasília",
-      "localizacao_estado": "DF",
-      "localizacao_coordenadas": "asdfasdfa",
-      "tipos_esportes": "Ping Pong, futebol, basquete, vôlei",
-      "id": "vhzICwp"
+      "nome_local": "Lindo local",
+      "descricao_local": "Lindo local",
+      "localizacao_cep": "78557129",
+      "localizacao_endereco": "Rua João Adão Scheeren",
+      "localizacao_cidade": "Sinop",
+      "localizacao_estado": "MT",
+      "localizacao_coordenadas": "sfdsf sfdsdfs",
+      "tipos_esportes": "caminhada, dança, alongamentos",
+      "id": 2
     },
     {
       "nome_local": "Fit person",
-      "descricao_local": "Local calmo e familiar para caminhadas de passeios e atividades ao ar livre",
-      "localizacao_cep": "78070068",
-      "localizacao_endereco": "Rua Seis",
-      "localizacao_cidade": "Cuiabá",
+      "descricao_local": "Lindo local",
+      "localizacao_cep": "78557129",
+      "localizacao_endereco": "Rua João Adão Scheeren",
+      "localizacao_cidade": "Sinop",
       "localizacao_estado": "MT",
-      "localizacao_coordenadas": "sdfasdf",
+      "localizacao_coordenadas": "asdfasdfa",
+      "tipos_esportes": "natação, caminhada, musculação",
+      "id": 3
+    },
+    {
+      "nome_local": "Exercite",
+      "descricao_local": "Lindo local",
+      "localizacao_cep": "78557129",
+      "localizacao_endereco": "Rua João Adão Scheeren",
+      "localizacao_cidade": "Sinop",
+      "localizacao_estado": "MT",
+      "localizacao_coordenadas": "asdfasdfadsdfs sdfsd",
+      "tipos_esportes": "natação, caminhada, musculação",
+      "id": 4
+    },
+    {
+      "nome_local": "Fit content",
+      "descricao_local": "Feio local",
+      "localizacao_cep": "29702260",
+      "localizacao_endereco": "Rua Adelqui Stefenoni",
+      "localizacao_cidade": "Colatina",
+      "localizacao_estado": "ES",
+      "localizacao_coordenadas": "sdfd sdfsdf",
       "tipos_esportes": "caminhada, dança, alongamentos",
-      "id": "RWEighv"
+      "id": 5
+    },
+    {
+      "nome_local": "Local exercicio",
+      "descricao_local": "Place",
+      "localizacao_cep": "57040780",
+      "localizacao_endereco": "Rua Tenente-Coronel - Eb Pedro Jerônimo dos Santos",
+      "localizacao_cidade": "Maceió",
+      "localizacao_estado": "AL",
+      "localizacao_coordenadas": "sfs sdfsdfs",
+      "tipos_esportes": "caminhada, dança, alongamentos",
+      "id_user": null,
+      "id": 6
+    },
+    {
+      "nome_local": "Exercite",
+      "descricao_local": "Place",
+      "localizacao_cep": "57040780",
+      "localizacao_endereco": "Rua Tenente-Coronel - Eb Pedro Jerônimo dos Santos",
+      "localizacao_cidade": "Maceió",
+      "localizacao_estado": "AL",
+      "localizacao_coordenadas": "sdfsgrew",
+      "tipos_esportes": "caminhada, dança, alongamentos",
+      "id_user": "amUTQKI",
+      "id": 7
     }
   ]
 }

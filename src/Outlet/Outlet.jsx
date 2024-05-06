@@ -1,20 +1,15 @@
-import NavHeader from "../Components/NavHeader";
-import FooterPage from "../Components/FooterPage";
 import { Outlet } from "react-router-dom";
-import { UsuariosContextProvider } from "../Context/UsuariosContext"
-
-
+import FooterPage from "../Components/FooterPage";
+import NavHeader from "../Components/NavHeader";
 
 function outlet() {
-
-    return(
-        <UsuariosContextProvider>
-            <NavHeader />
-            <Outlet />
-            <FooterPage />
-        </UsuariosContextProvider>
-        
-    )
+  return (
+    <>
+      <NavHeader />
+      <Outlet />
+      <FooterPage />
+    </>
+  );
 }
 
 export default outlet;

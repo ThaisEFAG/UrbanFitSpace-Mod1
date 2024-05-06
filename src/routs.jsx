@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Home from "../src/Pages/Home"
 import Login from "../src/Pages/Login"
 import CadastroUsuarios from "./Pages/CadastroUsuarios/index.jsx"
@@ -6,7 +6,13 @@ import CadastroExercicios from './Pages/CadastroExercicios/index.jsx';
 import EditExercicios from "./Pages/EditExercicios/index.jsx";
 import Outlet from "./Outlet/Outlet.jsx";
 
-const routers = createBrowserRouter([
+const logLstorage = JSON.parse(localStorage.getItem('usuarioLogado')) || false
+
+export const PriviteRoute = ({children}) => {
+  return logLstorage ? children : < Navigate to="/login"/>
+}
+
+export const routers = createBrowserRouter([
 
 
     {
@@ -19,7 +25,12 @@ const routers = createBrowserRouter([
     },
     {
       path: "/",
-      element: <Outlet />,
+      element: (
+      <PriviteRoute>
+
+        <Outlet/>
+      </PriviteRoute>
+      ),
       // errorElement: <PageErro/>,
       children: [
     {
@@ -37,5 +48,3 @@ const routers = createBrowserRouter([
   ]
 }
 ])
-
-export default routers;

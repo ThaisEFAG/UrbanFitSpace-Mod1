@@ -1,5 +1,5 @@
 
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import Cardcomponents from "../../Components/cardLocaisExercicio"
 import {LocaisContext} from "../../Context/LocaisContext"
 import "./style.css";
@@ -8,6 +8,8 @@ function Home() {
   
   const {listLocais} = useContext(LocaisContext)
   console.log(listLocais)
+
+  
 
   
 

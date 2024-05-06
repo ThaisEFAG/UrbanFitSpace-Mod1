@@ -8,6 +8,7 @@ export const LocaisContext = createContext();
 export const LocaisContextProvider = ({ children }) => {
   //estado do form cadastro
   const [listLocais, setListLocais] = useState([]);
+  const [listLocaisUser, setListLocaisUser] = useState([]);
 
   //  useEffect chama o fatch
   useEffect(() => {
@@ -18,6 +19,17 @@ export const LocaisContextProvider = ({ children }) => {
     .then((data) => setListLocais(data))
     .catch((error) => console.error(error));
   }, []);
+
+
+  //define que o usuario pode editar somente os locais que cadastrou
+  const LocalStorageLogado = JSON.parse(localStorage.getItem("usuarioLogado")) || false
+  const LocalStorageUserid = JSON.parse(localStorage.getItem("userid"))
+  useEffect(() => {
+    fetch(`http://localhost:3000/listLocais?id_user=${LocalStorageUserid}`)
+    .then((response) => response.json())
+    .then((data) => setListLocaisUser(data))
+    .catch((error) => console.error(error));
+  }, [LocalStorageLogado])
 
   // function ReadLoc() {
   //    //O fetch faz o get
@@ -36,10 +48,15 @@ export const LocaisContextProvider = ({ children }) => {
   //   .catch((error) => console.error(error));
 //  }
 
+
   function onSubmitLoc(cadForm) {
+    const idForm = JSON.parse(localStorage.getItem('userid'))
+    const batata = {
+      ...cadForm, id_user: idForm
+    }
     fetch("http://localhost:3000/listLocais", {
       method: "POST",
-      body: JSON.stringify(cadForm),
+      body: JSON.stringify(batata),
       headers: {
         "Content-Type": "application/json",
       },
@@ -48,37 +65,50 @@ export const LocaisContextProvider = ({ children }) => {
         alert("Usuário cadastrado com sucesso")
         // ReadLoc()
       })
+      .then(() => lerdadoslocais())
       .catch(() => alert("Erro cadastro"));
+      window.location.href="/"
+  
   }
 
   //function para mandar os dados já editados para o db.json
-  function editLoc(editDados, id) {
-    // fetch("http://localhost:3000/listLocais/" + id, {
-    //   method: "PUT", //(PUT- atualizar dados)
-    //   body: JSON.stringify(editDados), //(dados atualizados)
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // })
-    //   .then(() => { 
-    //     alert("Usuário atualizado com sucesso")
-    //     // ReadLoc()
-    //   })
-    //   .catch(() => alert("Erro ao atualizar"));
+  function editLoc(editDados) {
+    fetch("http://localhost:3000/listLocais/" + editDados.id, {
+      method: "PUT", //(PUT- atualizar dados)
+      body: JSON.stringify(editDados), //(dados atualizados)
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then(() => { 
+        alert("Usuário atualizado com sucesso")
+        // ReadLoc()
+      })
+      .catch(() => alert("Erro ao atualizar"));
     console.log(editDados)
   }
 
   
-  function removeLoc(id) {
-    fetch("http://localhost:3000/listLocais/" + id, {
+  function removeLoc(editDados) {
+    fetch("http://localhost:3000/listLocais/" + editDados, {
       method: "DELETE", //(Delete- usuario)
     })
       .then(() => alert("Usuário atualizado com sucesso"))
+      .then(() => lerdadoslocais())
       .catch(() => alert("Erro ao atualizar"));
   }
 
+  function lerdadoslocais() {
+    fetch("http://localhost:3000/listLocais")
+    //1º then transforma de json para js
+    .then((response) => response.json())
+    //2º then recebe o resultado do 1º que são os dados já transformados
+    .then((data) => setListLocais(data))
+    .catch((error) => console.error(error));
+  }
+
   return (
-    <LocaisContext.Provider value={{ listLocais, onSubmitLoc, removeLoc, editLoc}}>
+    <LocaisContext.Provider value={{ listLocais, onSubmitLoc, removeLoc, editLoc, listLocaisUser}}>
       {children}
     </LocaisContext.Provider>
   );
