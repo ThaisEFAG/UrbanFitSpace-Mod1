@@ -88,6 +88,7 @@ async  function loginUser(formLogin) {
         "Content-Type": "application/json"
       }
     })
+    
     localStorage.clear()
     window.location.href="/login"
   }catch(error){
