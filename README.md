@@ -9,7 +9,7 @@ UrbanFitSpace: Descubra Locais para Praticar Atividades Físicas ao seu Redor!
 Você já pensou como seria incrível ter acesso a informações sobre locais onde você pode se exercitar ao ar livre ou em ambientes fechados, próximos à sua localização?
 
 ## Basta parar de imaginar, porque essa possibilidade agora existe!
-O UrbanFitSpace foi criado para pessoas que conhecem locais públicos ou com baixo custo para a prática de atividades físicas, permitindo que eles cadastrem esses locais de forma interativa. E o melhor de tudo é que esses registros podem ser visualizados por qualquer pessoa que queira encontrar os melhores lugares e suas localizações exatas.
+O UrbanFitSpace foi criado para pessoas que conhecem locais públicos ou com baixo custo para a prática de atividades físicas, permitindo que esses locais sejam cadastrados de forma interativa. E o melhor de tudo é que esses registros podem ser visualizados por quaisquer outras pessoas que queiram encontrar os melhores lugares e suas localizações exatas.
 
 Além disso, você pode cadastrar e visualizar quais tipos de exercícios ou atividades físicas são possíveis de serem praticados em cada local, tornando sua experiência de exercício ainda mais personalizada e eficiente.
 
@@ -23,7 +23,7 @@ ________________________________________________________________________________
 :floppy_disk:  Técnologias utilizadas
 
 - JavaScript
-- React JS
+- React JS - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - HTML
 - CSS
 
@@ -31,6 +31,12 @@ ________________________________________________________________________________
 -----------------------------                      --------------------------------                    --------------------------------
 
 :arrow_forward:  Instruções para execução do projeto:
+1º Faça o download ou clone esse repositório;
+2º Abra seu Terminal/Prompt e navegue até o diretório UrbanFitSpace-Mod1;
+3º Execute o comando "npm install";
+4º Ainda no terminal execute o comando "npm run dev";
+6º Abra seu editor de código de preferência;
+
 
 
 -----------------------------                      --------------------------------                    --------------------------------
