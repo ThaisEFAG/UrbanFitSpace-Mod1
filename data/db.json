@@ -158,24 +158,12 @@
   ],
   "listLocais": [
     {
-      "id": "1",
-      "nome_local": "teste1",
-      "identificador_usuario": "teste2",
-      "descricao_local": "teste3",
-      "localizacao_cep": "teste4",
-      "localizacao_endereco": "teste5",
-      "localizacao_cidade": "teste6",
-      "localizacao_estado": "teste7",
-      "localizacao_coordenadas": "teste8",
-      "tipos_esportes": "teste9"
-    },
-    {
       "descricao_local": "Centro esportivo Lagoa",
       "localizacao_cep": "88420000",
       "localizacao_endereco": "Casa da Mãe Joana",
       "localizacao_cidade": "Agrolândia",
       "localizacao_estado": "SC",
-      "localizacao_coordenadas": "",
+      "localizacao_coordenadas": "eretewr rterte",
       "tipos_esportes": "natação, caminhada, musculação",
       "id": "HhLsTut"
     },

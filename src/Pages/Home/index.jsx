@@ -17,7 +17,7 @@ function Home() {
 
       {!!listLocais &&
         listLocais.map(local => 
-         (<Cardcomponents key={listLocais.id} localprop={local}>  </Cardcomponents>)
+         (<Cardcomponents key={local.id} localprop={local}>  </Cardcomponents>)
         //  (<Cardcomponents key={listLocais.id} nomeLocal = {local.nome_local}>  </Cardcomponents>)
         )}
     </>
