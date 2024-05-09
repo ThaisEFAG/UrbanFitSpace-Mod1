@@ -13,29 +13,32 @@ export const LocaisContextProvider = ({ children }) => {
   //  useEffect chama o fatch
   useEffect(() => {
     fetch("http://localhost:3000/listLocais")
-    //1º then transforma de json para js
-    .then((response) => response.json())
-    //2º then recebe o resultado do 1º que são os dados já transformados
-    .then((data) => setListLocais(data))
-    .catch((error) => console.error(error));
+      //1º then transforma de json para js
+      .then((response) => response.json())
+      //2º then recebe o resultado do 1º que são os dados já transformados
+      .then((data) => { setListLocais(data), setPositionMark(data)})
+      .catch((error) => console.error(error));
   }, []);
 
-
   //define que o usuario pode editar somente os locais que cadastrou
-  const LocalStorageLogado = JSON.parse(localStorage.getItem("usuarioLogado")) || false
-  const LocalStorageUserid = JSON.parse(localStorage.getItem("userid"))
+  const LocalStorageLogado =
+    JSON.parse(localStorage.getItem("usuarioLogado")) || false;
+  const LocalStorageUserid = JSON.parse(localStorage.getItem("userid"));
+  const [positionMark, setPositionMark] = useState([])
+
   useEffect(() => {
+    // Tras os locais cadastrados pelo usuario para edição
     fetch(`http://localhost:3000/listLocais?id_user=${LocalStorageUserid}`)
-    .then((response) => response.json())
-    .then((data) => setListLocaisUser(data))
-    .catch((error) => console.error(error));
-  }, [LocalStorageLogado])
+      .then((response) => response.json())
+      .then((data) => setListLocaisUser(data)
+      )
+      .catch((error) => console.error(error));
+  }, [LocalStorageLogado]);
 
   // function ReadLoc() {
   //    //O fetch faz o get
-     
-  // }
 
+  // }
 
   //Function para chamar no botão de editar com o id especifico do card local para alteração dos dados
   // function ReadLocId(id) {
@@ -46,14 +49,14 @@ export const LocaisContextProvider = ({ children }) => {
   //   //2º then recebe o resultado do 1º que são os dados já transformados
   //   .then((data) => setListLocais(data))
   //   .catch((error) => console.error(error));
-//  }
-
+  //  }
 
   function onSubmitLoc(cadForm) {
-    const idForm = JSON.parse(localStorage.getItem('userid'))
+    const idForm = JSON.parse(localStorage.getItem("userid"));
     const batata = {
-      ...cadForm, id_user: idForm
-    }
+      ...cadForm,
+      id_user: idForm,
+    };
     fetch("http://localhost:3000/listLocais", {
       method: "POST",
       body: JSON.stringify(batata),
@@ -62,13 +65,12 @@ export const LocaisContextProvider = ({ children }) => {
       },
     })
       .then(() => {
-        alert("Usuário cadastrado com sucesso")
+        alert("Usuário cadastrado com sucesso");
         // ReadLoc()
       })
       .then(() => lerdadoslocais())
       .catch(() => alert("Erro cadastro"));
-      window.location.href="/"
-  
+    window.location.href = "/";
   }
 
   //function para mandar os dados já editados para o db.json
@@ -80,15 +82,14 @@ export const LocaisContextProvider = ({ children }) => {
         "Content-Type": "application/json",
       },
     })
-      .then(() => { 
-        alert("Usuário atualizado com sucesso")
+      .then(() => {
+        alert("Usuário atualizado com sucesso");
         // ReadLoc()
       })
       .catch(() => alert("Erro ao atualizar"));
-    console.log(editDados)
+    console.log(editDados);
   }
 
-  
   function removeLoc(editDados) {
     fetch("http://localhost:3000/listLocais/" + editDados, {
       method: "DELETE", //(Delete- usuario)
@@ -100,15 +101,17 @@ export const LocaisContextProvider = ({ children }) => {
 
   function lerdadoslocais() {
     fetch("http://localhost:3000/listLocais")
-    //1º then transforma de json para js
-    .then((response) => response.json())
-    //2º then recebe o resultado do 1º que são os dados já transformados
-    .then((data) => setListLocais(data))
-    .catch((error) => console.error(error));
+      //1º then transforma de json para js
+      .then((response) => response.json())
+      //2º then recebe o resultado do 1º que são os dados já transformados
+      .then((data) => setListLocais(data))
+      .catch((error) => console.error(error));
   }
 
   return (
-    <LocaisContext.Provider value={{ listLocais, onSubmitLoc, removeLoc, editLoc, listLocaisUser}}>
+    <LocaisContext.Provider
+      value={{ listLocais, onSubmitLoc, removeLoc, editLoc, listLocaisUser, positionMark }}
+    >
       {children}
     </LocaisContext.Provider>
   );

@@ -1,19 +1,21 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
 import { UsuariosContext } from "../../Context/UsuariosContext";
 import "./style.css";
 
 function login() {
   const { register, handleSubmit } = useForm();
 
-  const {loginUser} = useContext(UsuariosContext)
+  const { loginUser } = useContext(UsuariosContext);
 
   //lembrar de depois de fazer a lógica do login adicionar algo daqui para referencia na função da quantidade de usuarios logados na pasta de hooks
 
   return (
-    <>
-      <form onSubmit={handleSubmit((formLogin) => loginUser(formLogin))} className="container-login">
+      <form
+        onSubmit={handleSubmit((formLogin) => loginUser(formLogin))}
+        className="container-login"
+      >
         <div className="login-div">
           <label htmlFor="">Login:</label>
           <input
@@ -42,7 +44,7 @@ function login() {
           </button>
         </div>
       </form>
-    </>
+    
   );
 }
 

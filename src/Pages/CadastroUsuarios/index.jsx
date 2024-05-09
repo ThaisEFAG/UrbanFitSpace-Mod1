@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { UsuariosContext } from "../../Context/UsuariosContext";
 import "./style.css";
 
-
 //mapa by coordenadas pra react
 //cadastro no google console
 
@@ -18,7 +17,6 @@ function cadastroUsuarios() {
   };
 
   function buscarCep() {
-
     if (cep < 8) {
       return;
     } else {
@@ -67,10 +65,8 @@ function cadastroUsuarios() {
     getValues,
     setValue,
   } = useForm();
-  
 
   const { onSubmitUser } = useContext(UsuariosContext);
-
 
   return (
     <div className="container-cadasto">
@@ -237,7 +233,9 @@ function cadastroUsuarios() {
             )}
           </div>
           <div className="button">
-            <button className="save-click" type="submit">Criar conta</button>
+            <button className="save-click" type="submit">
+              Criar conta
+            </button>
           </div>
         </form>
       </div>

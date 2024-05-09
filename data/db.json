@@ -170,7 +170,8 @@
       "localizacao_endereco": "Rua João Adão Scheeren",
       "localizacao_cidade": "Sinop",
       "localizacao_estado": "MT",
-      "localizacao_coordenadas": "sfdsf sfdsdfs",
+      "localizacao_latitude": -27.589185,
+      "localizacao_longitude": -48.52482,
       "tipos_esportes": "caminhada, dança, alongamentos",
       "id": 2
     },
@@ -181,7 +182,8 @@
       "localizacao_endereco": "Rua João Adão Scheeren",
       "localizacao_cidade": "Sinop",
       "localizacao_estado": "MT",
-      "localizacao_coordenadas": "asdfasdfa",
+      "localizacao_latitude": -27.72489,
+      "localizacao_longitude": -48.545404,
       "tipos_esportes": "natação, caminhada, musculação",
       "id": 3
     },
@@ -192,7 +194,8 @@
       "localizacao_endereco": "Rua João Adão Scheeren",
       "localizacao_cidade": "Sinop",
       "localizacao_estado": "MT",
-      "localizacao_coordenadas": "asdfasdfadsdfs sdfsd",
+      "localizacao_latitude": -27.606248,
+      "localizacao_longitude": -48.662039,
       "tipos_esportes": "natação, caminhada, musculação",
       "id": 4
     },
@@ -203,7 +206,8 @@
       "localizacao_endereco": "Rua Adelqui Stefenoni",
       "localizacao_cidade": "Colatina",
       "localizacao_estado": "ES",
-      "localizacao_coordenadas": "sdfd sdfsdf",
+      "localizacao_latitude": -27.5194647,
+      "localizacao_longitude": -48.649684,
       "tipos_esportes": "caminhada, dança, alongamentos",
       "id": 5
     },
@@ -214,7 +218,8 @@
       "localizacao_endereco": "Rua Tenente-Coronel - Eb Pedro Jerônimo dos Santos",
       "localizacao_cidade": "Maceió",
       "localizacao_estado": "AL",
-      "localizacao_coordenadas": "sfs sdfsdfs",
+      "localizacao_latitude": -27.5194647,
+      "localizacao_longitude": -48.649684,
       "tipos_esportes": "caminhada, dança, alongamentos",
       "id_user": null,
       "id": 6
@@ -226,10 +231,24 @@
       "localizacao_endereco": "Rua Tenente-Coronel - Eb Pedro Jerônimo dos Santos",
       "localizacao_cidade": "Maceió",
       "localizacao_estado": "AL",
-      "localizacao_coordenadas": "sdfsgrew",
+      "localizacao_latitude": -27.5194647,
+      "localizacao_longitude": -48.649684,
       "tipos_esportes": "caminhada, dança, alongamentos",
       "id_user": "amUTQKI",
       "id": 7
+    },
+    {
+      "nome_local": "Floresta",
+      "descricao_local": "Verde",
+      "localizacao_cep": "78557129",
+      "localizacao_endereco": "Rua João Adão Scheeren",
+      "localizacao_cidade": "Sinop",
+      "localizacao_estado": "MT",
+      "localizacao_latitude": "-15.927584",
+      "localizacao_longitude": "-48.080684",
+      "tipos_esportes": "caminhada, dança, alongamentos",
+      "id_user": "0f5c",
+      "id": 8
     }
   ]
 }

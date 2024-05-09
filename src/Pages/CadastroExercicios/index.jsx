@@ -126,8 +126,12 @@ function cadastroExercicios() {
             )}
           </div>
           <div className="form-group">
-            <label htmlFor="coorMaps">Coordenadas maps</label>
-            <input type="text" {...register("localizacao_coordenadas")} />
+            <label htmlFor="coorMaps">Latitude</label>
+            <input type="text" {...register("localizacao_latitude")} />
+          </div>
+          <div className="form-group">
+            <label htmlFor="coorMaps">Longitude</label>
+            <input type="text" {...register("localizacao_longitude")} />
           </div>
           <div className="form-group">
             <label htmlFor="typeExport">Tipos de esporte</label>

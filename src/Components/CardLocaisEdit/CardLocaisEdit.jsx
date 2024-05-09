@@ -14,7 +14,6 @@ const CardLocaisEdit = ({ local }) => {
     reset(local);
   };
 
-
   const handleEdit = (data) => {
     editLoc(data);
     setDesabilitar(true);
@@ -61,7 +60,11 @@ const CardLocaisEdit = ({ local }) => {
       <button type="submit" disabled={desabilitar}>
         Salvar
       </button>
-      <button type="button" onClick={() => removeLoc(local.id)} disabled={desabilitar}>
+      <button
+        type="button"
+        onClick={() => removeLoc(local.id)}
+        disabled={desabilitar}
+      >
         Excluir
       </button>
     </form>
