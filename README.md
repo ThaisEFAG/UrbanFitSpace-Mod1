@@ -43,6 +43,23 @@ ________________________________________________________________________________
 -----------------------------                      --------------------------------                    --------------------------------
 
 :arrow_forward:  Como usar:
+![image](https://github.com/ThaisEFAG/UrbanFitSpace-Mod1/assets/139922975/fa987f28-df28-4ea9-bbb0-6d8ccf3cbf33)
+Página de login: Inserir as credenciais de acesso
+
+![image](https://github.com/ThaisEFAG/UrbanFitSpace-Mod1/assets/139922975/6a9b1371-68d3-4d6e-aa0d-9f48404a3b69)
+Página de navegação: Quantidade de usuários logados, cards de locais, menu
+
+![image](https://github.com/ThaisEFAG/UrbanFitSpace-Mod1/assets/139922975/b8901cb9-b995-48ee-8c13-a12e34fcdbf6)
+Página de cadastro de locais
+
+![image](https://github.com/ThaisEFAG/UrbanFitSpace-Mod1/assets/139922975/f3e13d41-8875-40f6-bace-872be0e1db7c)
+Página de edição de locais
+
+
+
+
+
+
 
 
 -----------------------------                      --------------------------------                    --------------------------------
